@@ -1,0 +1,261 @@
+<!-- Written 06/20/2024 18:07:38 -->
+<XDFFORMAT version="1.70">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <deftitle>9E60B</deftitle>
+    <description></description>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="16" sigdigits="1" outputtype="1" signed="0" lsbfirst="1" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x400000" regioncolor="0x0" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+    <CATEGORY index="0x0" name="Boost" />
+    <CATEGORY index="0x1" name="Boost breakpoints" />
+    <CATEGORY index="0x2" name="WGDC" />
+    <CATEGORY index="0x3" name="WGDC breakpoints" />
+    <CATEGORY index="0x4" name="Fuel" />
+    <CATEGORY index="0x5" name="Fuel breakpoints" />
+    <CATEGORY index="0x6" name="Ignition" />
+    <CATEGORY index="0x7" name="Ignition breakpoints" />
+    <CATEGORY index="0x8" name="Limits" />
+    <CATEGORY index="0x9" name="Limits breakpoints" />
+    <CATEGORY index="0xA" name="Torque limiting maps" />
+    <CATEGORY index="0xB" name="Torque limiting maps breakpoints" />
+    <CATEGORY index="0xC" name="Load" />
+    <CATEGORY index="0xD" name="Load breakpoints" />
+    <CATEGORY index="0xE" name="Throttle" />
+    <CATEGORY index="0xF" name="Throttle breakpoints" />
+    <CATEGORY index="0x10" name="Torque request" />
+    <CATEGORY index="0x11" name="Torque request breakpoints" />
+    <CATEGORY index="0x12" name="Vanos" />
+    <CATEGORY index="0x13" name="Sensor Calibrations" />
+    <CATEGORY index="0x14" name="Vanos WIP" />
+    <CATEGORY index="0x15" name="WIP" />
+    <CATEGORY index="0x16" name="Rev limits - WIP do not use" />
+    <CATEGORY index="0x17" name="Transmission" />
+    <CATEGORY index="0x18" name="Toggles" />
+    <CATEGORY index="0x19" name="Exhaust" />
+    <CATEGORY index="0x1A" name="Vanos breakpoints" />
+    <CATEGORY index="0x1B" name="Vanos WIP breakpoints" />
+    <CATEGORY index="0x1C" name="Rev limits - WIP do not use breakpoints" />
+    <CATEGORY index="0x1D" name="Sensor Calibrations breakpoints" />
+    <CATEGORY index="0x1E" name="Exhaust breakpoints" />
+    <CATEGORY index="0x1F" name="WIP breakpoints" />
+    <CATEGORY index="0x20" name="Cooling" />
+    <CATEGORY index="0x21" name="Cooling breakpoints" />
+    <CATEGORY index="0x22" name="Dev" />
+    <CATEGORY index="0x23" name="Dev breakpoints" />
+    <CATEGORY index="0x24" name="MAF" />
+    <CATEGORY index="0x25" name="MAF breakpoints" />
+    <CATEGORY index="0x26" name="Injectors" />
+    <CATEGORY index="0x27" name="High Pressure Fuel Pump" />
+    <CATEGORY index="0x28" name="Burble" />
+    <CATEGORY index="0x29" name="Flap" />
+    <CATEGORY index="0x2A" name="Pending Removal" />
+    <CATEGORY index="0x2B" name="Flap breakpoints" />
+    <CATEGORY index="0x2C" name="Pending Removal breakpoints" />
+    <CATEGORY index="0x2D" name="Burble breakpoints" />
+    <CATEGORY index="0x2E" name="Injectors breakpoints" />
+    <CATEGORY index="0x2F" name="High Pressure Fuel Pump breakpoints" />
+    <CATEGORY index="0x30" name="Misfire Detecton - WIP" />
+  </XDFHEADER>
+  <XDFTABLE uniqueid="0x6A69" flags="0x0">
+    <title>Frequency of interruptions to achieve hiding of further functions</title>
+    <description>WOTBox =  65535, Stock = 12500</description>
+    <CATEGORYMEM index="0" category="25" />
+    <CATEGORYMEM index="1" category="49" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C9ABA" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x5D80" flags="0x0">
+    <title>Misfire Frequency to achieve a fuel cutoff</title>
+    <description>WOTBox = 65535, 2500 = Stock</description>
+    <CATEGORYMEM index="0" category="25" />
+    <CATEGORYMEM index="1" category="49" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C9ABC" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x5994" flags="0x0">
+    <title>Ignition Diagnosis: Increment Error counter ignition circut error, Bank by Bank</title>
+    <description>0 = WOTBox, 4 = Stock</description>
+    <CATEGORYMEM index="0" category="25" />
+    <CATEGORYMEM index="1" category="49" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1CA939" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x62EC" flags="0x0">
+    <title>Ignition Diagnosis: switches the correlation of the igintion diagnosis with the misfire detection</title>
+    <description>1 = on, 0 = off</description>
+    <CATEGORYMEM index="0" category="25" />
+    <CATEGORYMEM index="1" category="49" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1CA932" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>2</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x2F57" flags="0x0">
+    <title>Voltage threshold low for detection of cable drop Inj/IGN relay</title>
+    <description>0 = WOTBox, 5 = Stock</description>
+    <CATEGORYMEM index="0" category="25" />
+    <CATEGORYMEM index="1" category="49" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C4F38" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>V</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+</XDFFORMAT>
